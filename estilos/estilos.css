@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* --- INDEX --- */
+
+
+.titulo {
+    font-size: 4em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parallax {
+    background-color: black;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(white , black);
+}
+
+
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    }
+
+.nav-nuevo {
+    background-image: linear-gradient(white , black);
+}
+
+.menu {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-self: flex-end;
+   align-self: center;
+}
+
+.list-item{
+    margin-left: 1rem;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em
+}
+
+.footer{
+    text-align: right;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.foto1{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-imagenes{
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* .camara{
+    padding: 1rem;
+} */
+
+
+.section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.contacto{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    color: #FFFFFF; 
+    grid-row: 3  / 4;
+    grid-column: 1 / 3;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.footer{
+    display: block;
+    margin-top: 1em ;
+}
+
+
+.logo{
+    display: inline;
+    width: 70px;
+    height: 70px;
+}
+
+.carousel {
+    margin: 0 auto;
+}
+
+/*----MI HISTORIA----*/
+
+.foto-historia {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.imagen-historia {
+    width: 60%;
+}
+
+.texto3{
+    color: #FFFFFF; 
+    text-align: center;
+    font-size: 1.5em;
+    text-align: justify;
+    
+}
+
+
+/*------GALERIA------*/
+
+/* .section-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+
+} */
+
+.foto-galeria { 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*------CLIENTES------*/
+
+.section-clientes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.contenedor-clientes {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.imagen-cliente {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
+}
+
+.texto2 {
+    display: grid;
+    color: #FFFFFF; 
+    grid-column: 2 / 3;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+    align-content: center;
+
+}
+
+
+/*------CONTACTO------*/
+
+/* .mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.form-container {
+    border-radius: 2rem;
+    padding: 2rem;
+    color: whitesmoke;
+    margin-bottom: 1cm;
+    border: 10px solid #FFFFFF;
+    font-size: 20px;
+    background: #222;
+}
+
+.boton-enviar {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    margin: 30px;
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    .texto3 {
+        font-size: 2.5rem;
+        margin: 1.5em;
+    }
+
+    .section-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+    }
+
+    .foto-galeria {
+        margin-left: 1em;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+    .header{
+        flex-direction: column;
+        align-items: center;
+            }
+    .nav {
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .section {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    /*.section-galeria {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+    }*/
+
+
+    .section-clientes {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .imagen-cliente {
+        width: 90%;
+
+    }
+
+    .texto2 {
+        font-size: 2rem;
+    }
+        }
