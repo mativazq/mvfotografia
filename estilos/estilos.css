@@ -17,10 +17,10 @@
     padding: 10px;
 }
 
-ul{
+/* ul{
     list-style-type: none;
 
-}
+} */
 
 .container{
     max-width: 1200px;
@@ -48,13 +48,13 @@ ul{
     background-image: linear-gradient(white , black);
 }
 
-.menu {
+/* .menu {
    display: flex;
    flex-flow: row nowrap;
    justify-self: flex-end;
    align-self: center;
 }
-
+ */
 .list-item{
     margin-left: 1rem;
 }
@@ -66,7 +66,29 @@ li a {
     font-size: 1.5em
 }
 
-.footer{
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.contactame {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.iconos-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+/* .footer{
     text-align: right;
 }
 
@@ -74,7 +96,7 @@ li a {
     text-decoration: none;
     color: white;
     font-size: 20px;
-}
+} */
 
 .foto1{
     display: grid;
