@@ -1,0 +1,69 @@
+$color-letra: white;
+$color-fondo: black;
+
+.titulo {
+    font-size: 4em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:$color-letra;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parallax {
+    background-color: $color-fondo;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav-nuevo {
+    background-image: linear-gradient($color-letra , $color-fondo);
+}
+
+li {
+    a {
+        text-decoration: none;
+        color: $color-letra;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    color: $color-letra;
+}
+
+.contactame {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.iconos-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1em;
+}
+
+.logo {
+    display: inline;
+    width: 4em;
+    height: 4em;
+}
+
+.carousel {
+    margin: 0 auto;
+}
