@@ -304,13 +304,6 @@ li a {
         flex-flow: column wrap;
     }
 
-    /*.section-galeria {
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-content: center;
-    }*/
-
-
     .section-clientes {
         display: flex;
         flex-flow: column wrap;
@@ -324,4 +317,4 @@ li a {
     .texto2 {
         font-size: 2rem;
     }
-        }
+}

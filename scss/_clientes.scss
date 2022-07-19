@@ -1,0 +1,33 @@
+.section-clientes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.contenedor-clientes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.imagen-cliente {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
+}
+
+.texto2 {
+    display: grid;
+    color: $color-letra;
+    grid-column: 2 / 3;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+    align-content: center;
+}
