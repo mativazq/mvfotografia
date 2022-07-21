@@ -1,6 +1,15 @@
 $color-letra: white;
 $color-fondo: black;
 
+.animacion-nav {
+    height: 0.5em;
+    transition: height 1s;
+    &:hover {
+        height: 0.5em;
+        font-size: 3em;
+    }
+}
+
 .titulo {
     font-size: 4em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

@@ -16,5 +16,10 @@
     border-radius: 20px;
     border: none;
     margin: 30px;
-    background-color: $color-letra;
+    background-color: #38761d;
+}
+
+.boton-borrar {
+    @extend .boton-enviar;
+    background-color: #810C0C;
 }
