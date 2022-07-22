@@ -59,6 +59,27 @@ li a {
 .carousel {
   margin: 0 auto; }
 
+.boton-red, .btn-face, .btn-insta, .btn-whats {
+  width: 6em;
+  height: 2em;
+  font-size: 1em;
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  border: none;
+  margin: 1em;
+  background-color: #313131; }
+
+.btn-face, .btn-insta, .btn-whats {
+  color: #3a5795;
+  text-decoration: none; }
+
+.btn-insta {
+  color: #FF9A0F; }
+
+.btn-whats {
+  color: #00bb2d; }
+
 .foto-historia {
   display: flex;
   flex-flow: row wrap;

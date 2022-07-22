@@ -1,0 +1,12 @@
+Se agregó en todas las paginas keywords cada una refiriendose a la pagina que la contiene.
+
+Se agregó descripcion de cada pagina para identificar cada una.
+
+Se mantuvieron los titulos de cada pagina puestos anteriormente.
+
+El extend se encuentra tanto en el SCSS "index" como en el SCSS "contacto".
+
+Se modificaron los logos de las redes para dejar paso a un texto con los links.
+
+El Mixin se encuentra en el SCSS "Index"
+

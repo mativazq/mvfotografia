@@ -76,3 +76,43 @@ li {
 .carousel {
     margin: 0 auto;
 }
+
+@mixin longi($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.boton-red {
+    @include longi(6em, 2em);
+    font-size: 1em ;
+    justify-content: center;
+    align-content: center ;
+    border-radius: 20px;
+    border: none;
+    margin: 1em;
+    background-color: #313131;
+}
+
+$redes-footer:(
+    instagram: #FF9A0F,
+    facebook: #3a5795,
+    whatsapp: #00bb2d, 
+    letra: #ffffff,
+
+);
+
+.btn-face {
+    @extend .boton-red;
+    color: map-get($redes-footer, facebook);
+    text-decoration: none;
+}
+
+.btn-insta {
+    @extend .btn-face;
+    color: map-get($redes-footer, instagram);
+}
+
+.btn-whats {
+    @extend .btn-face;
+    color: map-get($redes-footer, whatsapp);
+}
