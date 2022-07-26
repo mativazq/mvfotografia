@@ -1,6 +1,12 @@
 $color-letra: white;
 $color-fondo: black;
 
+.logo {
+    display: inline;
+    width: 4em;
+    height: 4em;
+}
+
 .animacion-nav {
     height: 0.5em;
     transition: height 1s;
@@ -67,11 +73,6 @@ li {
     gap: 1em;
 }
 
-.logo {
-    display: inline;
-    width: 4em;
-    height: 4em;
-}
 
 .carousel {
     margin: 0 auto;

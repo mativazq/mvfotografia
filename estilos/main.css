@@ -1,3 +1,8 @@
+.logo {
+  display: inline;
+  width: 4em;
+  height: 4em; }
+
 .animacion-nav {
   height: 0.5em;
   transition: height 1s; }
@@ -50,11 +55,6 @@ li a {
   align-items: center;
   margin-bottom: 1rem;
   gap: 1em; }
-
-.logo {
-  display: inline;
-  width: 4em;
-  height: 4em; }
 
 .carousel {
   margin: 0 auto; }
@@ -149,20 +149,30 @@ li a {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: 1rem; }
+  margin: 1rem;
+  width: 20em;
+  height: 20em; }
 
 .texto2 {
   display: grid;
   color: white;
   grid-column: 2 / 3;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 1em;
   align-content: center; }
+
+.img-redonda {
+  border-radius: 20rem;
+  border: 0.5rem solid #666;
+  justify-items: center;
+  align-items: center; }
 
 @media (max-width: 768px) {
   html {
     font-size: 50%; }
+  .animacion-nav {
+    margin: 0.5rem; }
   .texto3 {
     font-size: 2.5rem;
     margin: 1.5em; }
@@ -186,6 +196,8 @@ li a {
     display: flex;
     flex-flow: column wrap; }
   .imagen-cliente {
-    width: 90%; }
+    margin-left: 7rem;
+    width: 80%;
+    height: 80%; }
   .texto2 {
     font-size: 2rem; } }

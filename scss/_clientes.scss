@@ -20,6 +20,8 @@
     justify-content: center;
     align-content: center;
     margin: 1rem;
+    width: 20em;
+    height: 20em;
 }
 
 .texto2 {
@@ -27,7 +29,15 @@
     color: $color-letra;
     grid-column: 2 / 3;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 1em;
     align-content: center;
+}
+
+.img-redonda {
+    border-radius: 20rem;
+    border: 0.5rem solid #666;
+    justify-items: center;
+    align-items: center;
+
 }
