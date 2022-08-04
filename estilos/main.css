@@ -20,7 +20,7 @@
   padding: 10px; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto; }
 
 .parallax {
@@ -80,7 +80,8 @@ li a {
   color: #FFFFFF;
   text-align: center;
   font-size: 1.5em;
-  text-align: justify; }
+  text-align: justify;
+  margin: 0.5em; }
 
 .foto-galeria {
   overflow: hidden;
@@ -150,7 +151,7 @@ li a {
   grid-column: 2 / 3;
   text-align: center;
   font-size: 2em;
-  margin-bottom: 1em;
+  margin: 1em;
   align-content: center; }
 
 .img-redonda {
@@ -164,6 +165,8 @@ li a {
     font-size: 50%; }
   .animacion-nav {
     margin: 0.7em; }
+  .texto {
+    font-size: 2em; }
   .texto3 {
     font-size: 2.5rem;
     margin: 1.5em; }
