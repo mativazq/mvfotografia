@@ -5,14 +5,17 @@ $color-fondo: black;
     display: inline;
     width: 4em;
     height: 4em;
+    &:hover {
+        transition: 0.5s;
+        transform: rotate(360deg);
+    }
 }
 
 .animacion-nav {
     height: 0.5em;
-    transition: height 1s;
+    transition: height 0.6s;
     &:hover {
-        height: 0.5em;
-        font-size: 3em;
+        transform: scale(1.2);
     }
 }
 
@@ -56,6 +59,8 @@ li {
     display: flex;
     flex-direction: column;
     color: $color-letra;
+    background-color: rgba(80, 80, 80, 0.24);
+    margin-top: 2em;
 }
 
 .contactame {
@@ -73,47 +78,17 @@ li {
     gap: 1em;
 }
 
+.footer-redondo {
+    border-radius: 4em;
+}
+
 
 .carousel {
     margin: 0 auto;
+
 }
 
 @mixin longi($width, $height) {
     width: $width;
     height: $height;
-}
-
-.boton-red {
-    @include longi(6em, 2em);
-    font-size: 1em ;
-    justify-content: center;
-    align-content: center ;
-    border-radius: 20px;
-    border: none;
-    margin: 1em;
-    background-color: #313131;
-}
-
-$redes-footer:(
-    instagram: #FF9A0F,
-    facebook: #3a5795,
-    whatsapp: #00bb2d, 
-    letra: #ffffff,
-
-);
-
-.btn-face {
-    @extend .boton-red;
-    color: map-get($redes-footer, facebook);
-    text-decoration: none;
-}
-
-.btn-insta {
-    @extend .btn-face;
-    color: map-get($redes-footer, instagram);
-}
-
-.btn-whats {
-    @extend .btn-face;
-    color: map-get($redes-footer, whatsapp);
 }

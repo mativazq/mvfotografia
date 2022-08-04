@@ -2,13 +2,15 @@
   display: inline;
   width: 4em;
   height: 4em; }
+  .logo:hover {
+    transition: 0.5s;
+    transform: rotate(360deg); }
 
 .animacion-nav {
   height: 0.5em;
-  transition: height 1s; }
+  transition: height 0.6s; }
   .animacion-nav:hover {
-    height: 0.5em;
-    font-size: 3em; }
+    transform: scale(1.2); }
 
 .titulo {
   font-size: 4em;
@@ -41,7 +43,9 @@ li a {
 .footer2 {
   display: flex;
   flex-direction: column;
-  color: white; }
+  color: white;
+  background-color: rgba(80, 80, 80, 0.24);
+  margin-top: 2em; }
 
 .contactame {
   text-align: center;
@@ -56,29 +60,11 @@ li a {
   margin-bottom: 1rem;
   gap: 1em; }
 
+.footer-redondo {
+  border-radius: 4em; }
+
 .carousel {
   margin: 0 auto; }
-
-.boton-red, .btn-face, .btn-insta, .btn-whats {
-  width: 6em;
-  height: 2em;
-  font-size: 1em;
-  justify-content: center;
-  align-content: center;
-  border-radius: 20px;
-  border: none;
-  margin: 1em;
-  background-color: #313131; }
-
-.btn-face, .btn-insta, .btn-whats {
-  color: #3a5795;
-  text-decoration: none; }
-
-.btn-insta {
-  color: #FF9A0F; }
-
-.btn-whats {
-  color: #00bb2d; }
 
 .foto-historia {
   display: flex;
@@ -100,13 +86,21 @@ li a {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 1em; }
+  .foto-galeria:hover {
+    transition: 0.5s;
+    transform: scale(1.3); }
 
 .texto {
   color: white;
   text-align: center;
   font-size: 1.5em;
   margin-bottom: 1em; }
+
+.row {
+  justify-content: center;
+  align-content: center; }
 
 .form-container {
   border-radius: 2rem;
@@ -131,8 +125,8 @@ li a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  justify-content: center;
-  align-content: center;
+  justify-items: center;
+  align-items: center;
   margin: 0 auto; }
 
 .contenedor-clientes {
@@ -169,15 +163,16 @@ li a {
   html {
     font-size: 50%; }
   .animacion-nav {
-    margin: 0.5rem; }
+    margin: 0.7em; }
   .texto3 {
     font-size: 2.5rem;
     margin: 1.5em; }
   .section-galeria {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr); }
-  .foto-galeria {
-    margin-left: 1em; } }
+  .row {
+    align-content: center;
+    justify-content: center; } }
 
 @media (max-width: 480px) {
   .header {
@@ -185,7 +180,7 @@ li a {
     align-items: center; }
   .nav {
     justify-content: center;
-    margin-top: 1em; }
+    margin-top: 2em; }
   .section {
     display: flex;
     flex-flow: column wrap; }
@@ -193,7 +188,7 @@ li a {
     display: flex;
     flex-flow: column wrap; }
   .imagen-cliente {
-    margin-left: 7rem;
+    /*         margin-left: 7rem; */
     width: 80%;
     height: 80%; }
   .texto2 {
