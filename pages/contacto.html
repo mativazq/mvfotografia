@@ -47,37 +47,33 @@
     <h2 class="titulo">CONTACTO:</h2>
 </main>
 
-<!-- 
-<div class="mapa">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.645949142508!2d-60.730754868692195!3d-31.643542954712558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a84bcf6ce8f9%3A0xf2e72a26e10b4db8!2sJuan%20D%C3%ADaz%20de%20Sol%C3%ADs%202360%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1655415318030!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
--->
+
 <section class="container">
-    <form class="row form-container">
+    <form class="row form-container" action="https://formsubmit.co/mativazquezfotografia@hotmail.com" method="POST">
 
         <div class="mb-3 col-lg-6 col-sm-12">
             <label for="formGroupExampleInput" class="form-label">Ingrese su Nombre:</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inserte aqui su Nombre">
+            <input type="text" name="nombre" class="form-control" id="formGroupExampleInput" placeholder="Inserte aqui su Nombre">
         </div>
 
         <div class="mb-3 col-lg-6 col-sm-12">
             <label for="formGroupExampleInput" class="form-label">Ingrese su Apellido:</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inserte aqui su Apellido">
+            <input type="text" name="apellido" class="form-control" id="formGroupExampleInput" placeholder="Inserte aqui su Apellido">
         </div>
 
         <div class="mb-3 col-lg-8 col-sm-12">
             <label for="exampleFormControlInput1" class="form-label">Inserte su correo:</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+            <input type="email" name="correo" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
         </div>
 
         <div class="mb-3 col-lg-4 col-sm-12">
             <label for="formGroupExampleInput" class="form-label">Ingrese su Telefono:</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inserte aqui su telefono">
+            <input type="text" name="telefono" class="form-control" id="formGroupExampleInput" placeholder="Inserte aqui su telefono">
         </div>
 
         <div class="mb-3 col-lg-6 col-sm-12">
             <label for="formGroupExampleInput" class="form-label">Ingrese su Ciudad:</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inserte aqui su localidad">
+            <input type="text" name="ciudad" class="form-control" id="formGroupExampleInput" placeholder="Inserte aqui su localidad">
         </div>
 
         <div class="col-lg-6 col-sm-12">
@@ -92,8 +88,7 @@
         </div>
         <div class="col-lg-12">
             <label for="mensaje" class="form-label">Dejame tu comentario/sugerencia:</label>
-            <textarea id="form-input" class="form-control" placeholder="Escribime tu consulta">
-            </textarea>
+            <input type="text" name="comentario" class="form-control" placeholder="Escribime tu consulta">
         </div>
         <div class="col-lg-6 d-flex justify-content-center">
         <button type="submit" class="boton-enviar">Enviar</button>
