@@ -11,12 +11,33 @@ $color-fondo: black;
     }
 }
 
-.animacion-nav {
-    height: 0.5em;
-    transition: height 0.6s;
-    &:hover {
-        transform: scale(1.2);
+.nav-links {
+    list-style: none;
+    display: flex;
+    & li {
+        margin: 0 10px;
     }
+}
+.animacion-nav {
+    text-decoration: none;
+    color: $color-letra;
+    position: relative;
+}
+
+.animacion-nav::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 3px;
+    width: 0px;
+    border-radius: 2px;
+    background-color: $color-letra;
+    transition: 0.4s ease;
+}
+
+.animacion-nav:hover::after {
+    width: 100%;
 }
 
 .titulo {
